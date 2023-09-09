@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./InputGroup.css";
 
 const InputGroupRange = ({
@@ -15,12 +15,8 @@ const InputGroupRange = ({
   orient = "horizontal",
   details = [],
 }) => {
-  const [rangeLabel, setRangeLabel] = useState(value);
   const inputClassName = `col form-control${isInvalid ? " is-invalid" : ""}`;
-  // Cria o elemento <datalist> dinâmico com base nos detalhes (details)
-  const datalistOptions = details.map((detail, index) => (
-    <option key={index} value={detail} />
-  ));
+
   return (
     <div className="mb-3">
       <label htmlFor={id} className="form-label">
@@ -40,7 +36,9 @@ const InputGroupRange = ({
           value={value}
           orient={orient}
         />
-        <label htmlFor={id} className="col-1">{value} </label>
+        <label htmlFor={id} className="col-1">
+          {value}{" "}
+        </label>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import GenericButton from "../commons/buttons/GenericButton";
-import './Sections.css'
+import "./Sections.css";
+import GenericButtonIcon from "../commons/buttons/GenericButtonIcon";
 const Botoes = () => {
   const handleButtonClick = () => {
     alert("Botão Generico Clicado");
@@ -32,6 +33,28 @@ const Botoes = () => {
           css="btn btn-primary"
           texto="Primario"
           onClick={handleButtonClick}
+        />
+      </div>
+
+      <h3>Botoes Genericos com icones</h3>
+      <p>
+        Para usar deve passar o css bootstrap, o nome do botao e o que vai
+        acontecer quando clicar e o icone, deve estar instalado o icons do
+        bootstrap
+      </p>
+      <div>
+        <GenericButtonIcon
+          css="btn btn-primary"
+          texto="Primario"
+          onClick={handleButtonClick}
+          iconClass="bi bi-yelp"
+        />
+
+        <GenericButtonIcon
+          css="btn btn-danger"
+          texto="Perigo"
+          onClick={handleButtonClick}
+          iconClass="bi bi-windows"
         />
       </div>
     </div>
