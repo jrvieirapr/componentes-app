@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
       <main>
-        {/* <Botoes />
+        <Botoes />
         <Inputs />
-        <CheckRadioSection /> */}
+        <CheckRadioSection />
         <Cards />
     
       </main>

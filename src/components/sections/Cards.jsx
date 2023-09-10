@@ -24,44 +24,48 @@ const Cards = () => {
 
   return (
     <div className="div-generic">
-      <h2>Cards</h2>
-      <p>
-        Para usar os cards envie os props necessarios: header, title, subtitle,
-        content, footer, images, link,
-      </p>
-      <div>
-        <h3>Cards simples</h3>
-        <div className="col-6">
-          <GenericCard>
-            <GenericCardHeader header="Cards" />
-            <GenericCardBody>
-              <GenericCardTitle title="Titulo" subtitle="subtitle" />
-              <DynamicCarousel images={images} />
-              <GenericCardText text="Texto do Card" />
-            </GenericCardBody>
-            <GenericCardFooter footer="footer" />
-          </GenericCard>
+      <div className="div-generic">
+        <h2>Cards</h2>
+        <p>
+          Para usar os cards envie os props necessarios: header, title,
+          subtitle, content, footer, images, link,
+        </p>
+        <div>
+          <h3>Cards simples</h3>
+          <div className="col-6">
+            <GenericCard>
+              <GenericCardHeader header="Cards" />
+              <GenericCardBody>
+                <GenericCardTitle title="Titulo" subtitle="subtitle" />
+                <DynamicCarousel images={images} />
+                <GenericCardText text="Texto do Card" />
+              </GenericCardBody>
+              <GenericCardFooter footer="footer" />
+            </GenericCard>
+          </div>
         </div>
       </div>
-      <h2>Modal</h2>
-      <p>
-        Para usar os cards envie os props necessarios: launchText, modalTitle,
-        closeText, makeText, modalText,
-      </p>
-      <div>
-        <h3>Modal simples</h3>
-        <div className="col-6">
-          <GenericModal
-            launchText="Abrir Modal"
-            modalTitle="Teste Modal"
-            closeText="Fechar"
-            closeCss={"btn btn-primary"}
-            closeClick={onClickClose}
-            agreeText="Remover"
-            agreeCSS="btn btn-danger"
-            agreeClick={onClickAgree}
-            modalText="Teste de modal"
-          />
+      <div className="div-generic">
+        <h2>Modal</h2>
+        <p>
+          Para usar os cards envie os props necessarios: launchText, modalTitle,
+          closeText, makeText, modalText,
+        </p>
+        <div>
+          <h3>Modal simples</h3>
+          <div className="col-6">
+            <GenericModal
+              launchText="Abrir Modal"
+              modalTitle="Teste Modal"
+              closeText="Fechar"
+              closeCss={"btn btn-primary"}
+              closeClick={onClickClose}
+              agreeText="Remover"
+              agreeCSS="btn btn-danger"
+              agreeClick={onClickAgree}
+              modalText="Teste de modal"
+            />
+          </div>
         </div>
       </div>
     </div>
