@@ -7,8 +7,9 @@ const InputGroupText = ({
   type,
   placeholder,
   isInvalid,
-  value,
+  value = "",
   onChange,
+  autoComplete
 }) => {
   const inputClassName = `form-control${isInvalid ? " is-invalid" : ""}`;
   return (
@@ -21,6 +22,7 @@ const InputGroupText = ({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
+        autoComplete={autoComplete}
       />
     </div>
   );
